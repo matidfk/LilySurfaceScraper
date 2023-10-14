@@ -4,6 +4,7 @@
 
 Lily Surface Scraper
 ====================
+**Now updated to work in blender 4.1**
 
 There are many sources for getting PBR textures on the Internet, but it is always a repetitive task to setup the shader once in Blender. Some sources provide an add-on to automatically handle this, but it remains painful to install a new add-on for each of them, and learn over how they slightly differ from the other one.
 
