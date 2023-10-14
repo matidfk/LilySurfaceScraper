@@ -136,6 +136,6 @@ def guessColorSpaceFromExtension(img):
         }
     else:
         return {
-            "name": "Linear",
+            "name": "Linear Rec.709",
             "old_name": "NONE",
         }
