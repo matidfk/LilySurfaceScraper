@@ -105,7 +105,9 @@ class AmbientCgScraper(AbstractScraper):
             'disp': 'height',
             # New names
             'Color': 'baseColor',
-            'Normal': 'normalInvertedY',
+            # Another new change, ambientCG now provides both DX and GL maps
+            'NormalGL': 'normal',
+            # 'NormalDX': 'normalInvertedY',
             'Opacity': 'opacity',
             'Roughness': 'roughness',
             'Metalness': 'metallic',

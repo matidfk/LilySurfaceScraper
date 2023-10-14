@@ -49,6 +49,11 @@ class LilySurfaceScraperPreferences(bpy.types.AddonPreferences):
         default=False,
     )
 
+    use_displacement: bpy.props.BoolProperty(
+        name="Use Displacement map",
+        default=False
+    )
+
     use_arm: bpy.props.BoolProperty(
         name="Use ARM map instead of separate maps for AO/Roughness/Metalness",
         default=True,

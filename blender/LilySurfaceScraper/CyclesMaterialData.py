@@ -200,11 +200,12 @@ class CyclesMaterialData(MaterialData):
                 if name == "diffuse":
                     if not self.principled_node.inputs["Base Color"].is_linked:
                         links.new(node.outputs["Color"], self.principled_node.inputs["Base Color"])
-                elif name == "height":
+                elif name == "height" and pref.use_displacement:
                     displacement_node = nodes.new(type="ShaderNodeDisplacement")
                     displacement_node.inputs[2].default_value = .2
                     links.new(node.outputs["Color"], displacement_node.inputs["Height"])
                     links.new(displacement_node.outputs["Displacement"], self.mat_output.inputs[2])
+
                 elif name == "normal":
                     normal_node = nodes.new(type="ShaderNodeNormalMap")
                     links.new(node.outputs["Color"], normal_node.inputs["Color"])
